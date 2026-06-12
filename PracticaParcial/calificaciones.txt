@@ -1,0 +1,5 @@
+
+Fulano	Mengano	1A	Enero	95	90	85	90
+Fulano	Mengano	2B	Febrero	100	50	60	98
+Mengano	Fulano	3B	Enero	90	85	98	85
+Fulano	Mengano	3C	Enero	95	65	90	88
