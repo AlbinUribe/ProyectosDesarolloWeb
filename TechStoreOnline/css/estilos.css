@@ -1,0 +1,1318 @@
+/* ==================================================
+VARIABLES GLOBALES
+Colores reutilizables del sitio completo.
+Cambiar aquí afecta toda la página.
+================================================== */
+
+/* =================================
+TEMA OSCURO
+Negro + Blanco + Rojo
+================================= */
+
+:root{
+
+--color-primario:#0F0F0F;
+/* negro principal */
+
+--color-secundario:#B91C1C;
+/* rojo botones */
+
+--color-acento:#DC2626;
+/* rojo brillante */
+
+--color-fondo:#000000;
+/* fondo */
+
+--color-texto:#FFFFFF;
+/* texto */
+
+}
+
+
+/* ==================================================
+RESET GENERAL
+Elimina estilos automáticos del navegador.
+================================================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+
+/* ==================================================
+CONFIGURACIÓN BASE DEL SITIO
+Fondo, fuente y espacio para el header fijo.
+================================================== */
+
+body{
+
+background-color:var(--color-fondo);
+
+color:var(--color-texto);
+
+font-family:Arial,sans-serif;
+
+line-height:1.6;
+
+padding-top:110px;
+
+}
+
+
+/* ==================================================
+ENLACES
+Quita subrayado y mantiene color heredado.
+================================================== */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+
+/* ==================================================
+LISTAS
+================================================== */
+
+ul{
+
+list-style:none;
+
+}
+
+
+/* ==================================================
+IMÁGENES GENERALES
+Evita deformaciones y desbordes.
+================================================== */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+object-fit:cover;
+
+}
+
+
+/* ==================================================
+BOTONES
+Cursor visual.
+================================================== */
+
+button{
+
+cursor:pointer;
+
+border:none;
+
+}
+
+
+/* ==================================================
+FORMULARIOS BASE
+Mantener misma fuente.
+================================================== */
+
+input,
+textarea,
+select,
+button{
+
+font:inherit;
+
+}
+
+
+/* ==================================================
+IMÁGENES DE PRODUCTOS
+Uniforma tamaños.
+================================================== */
+
+article img{
+
+width:220px;
+
+height:220px;
+
+margin:auto;
+
+object-fit:contain;
+
+}
+
+
+/* ==================================================
+HEADER
+Versión compacta
+================================================== */
+
+header{
+
+background-color:var(--color-primario);
+
+color:white;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:1000;
+
+padding:8px 20px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+
+header h1{
+
+text-align:center;
+
+font-size:1.8rem;
+
+margin-bottom:6px;
+
+}
+
+
+/* ==================================================
+NAVEGACIÓN
+Flexbox horizontal.
+================================================== */
+
+nav ul{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+}
+
+
+nav a{
+
+padding:8px 12px;
+
+font-size:.95rem;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+
+nav a:hover{
+
+background-color:var(--color-secundario);
+
+}
+
+
+/* ==================================================
+BUSCADOR DEL HEADER
+================================================== */
+
+header form{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+margin-top:10px;
+
+padding:0;
+
+background:none;
+
+box-shadow:none;
+
+border-radius:0;
+
+max-width:none;
+
+}
+
+
+header input{
+
+width:280px;
+
+height:40px;
+
+padding:0 12px;
+
+border:none;
+
+border-radius:10px;
+
+}
+
+
+header button{
+
+height:40px;
+
+padding:0 18px;
+
+background-color:var(--color-acento);
+
+border-radius:10px;
+
+font-weight:bold;
+
+}
+
+
+/* ==================================================
+SECCIONES GENERALES
+================================================== */
+
+section{
+
+padding:40px 30px;
+
+}
+
+
+section h1,
+section h2{
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+
+/* ==================================================
+BANNER PRINCIPAL
+================================================== */
+
+figure{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+figure img{
+
+width:100%;
+
+max-width:1000px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+box-shadow:
+0 0 40px
+rgba(220,38,38,.20);
+
+}
+
+
+figure button{
+
+margin-top:20px;
+
+}
+
+
+/* ==================================================
+PRIMERA SECCIÓN
+Botón principal.
+================================================== */
+
+section:first-of-type{
+
+text-align:center;
+
+}
+
+
+section:first-of-type button{
+
+margin-top:20px;
+
+padding:14px 28px;
+
+background-color:var(--color-acento);
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+
+section:first-of-type button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* ==================================================
+CATEGORÍAS
+Tarjetas con Flexbox.
+================================================== */
+
+section:nth-of-type(2){
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+
+/* =================================
+CATEGORÍAS
+Tarjetas modo oscuro
+================================= */
+
+section:nth-of-type(2) article{
+
+background:#121212;
+
+color:white;
+
+width:260px;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:
+0 0 18px
+rgba(220,38,38,.10);
+
+transition:.3s;
+
+}
+
+
+section:nth-of-type(2) article:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+/* ==================================================
+PRODUCTOS
+Grid automático.
+================================================== */
+
+main section{ 
+    
+    width:100%;
+    
+    padding:40px; 
+}
+
+
+m/* =================================
+PRODUCTOS
+Tarjetas principales
+================================= */
+
+main article{
+
+background:#121212;
+
+color:white;
+
+padding:20px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+0 0 25px
+rgba(220,38,38,.12);
+
+transition:.35s;
+
+}
+
+
+main article:hover{
+
+transform:scale(1.03);
+
+}
+
+
+main article img{
+
+width:100%;
+
+height:220px;
+
+object-fit:contain;
+
+margin-bottom:20px;
+
+}
+
+
+main article header{
+
+position:static;
+
+background:none;
+
+color:inherit;
+
+padding:0;
+
+box-shadow:none;
+
+}
+
+
+main article footer{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-top:15px;
+
+}
+
+
+main article button{
+
+background-color:var(--color-secundario);
+
+color:white;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+}
+
+
+/* ==================================================
+FORMULARIOS
+================================================== */
+
+/* =================================
+FORMULARIOS
+Modo oscuro
+================================= */
+
+form{
+
+max-width:900px;
+
+margin:40px auto;
+
+padding:30px;
+
+background:#121212;
+
+color:white;
+
+border-radius:20px;
+
+box-shadow:
+0 0 30px
+rgba(220,38,38,.10);
+
+}
+
+
+fieldset{
+
+border:2px solid var(--color-secundario);
+
+border-radius:18px;
+
+padding:20px;
+
+}
+
+
+legend{
+
+font-weight:bold;
+
+color:var(--color-primario);
+
+}
+
+
+/* =================================
+INPUTS
+Tema oscuro
+================================= */
+
+input,
+textarea,
+select{
+
+width:100%;
+
+padding:12px;
+
+margin-top:8px;
+
+margin-bottom:18px;
+
+background:#0A0A0A;
+
+color:white;
+
+border:
+
+2px solid
+
+#333;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+
+input:focus,
+textarea:focus,
+select:focus{
+
+outline:none;
+
+border-color:var(--color-secundario);
+
+}
+
+
+input:required{
+
+border-left:5px solid var(--color-acento);
+
+}
+
+
+input:disabled{
+
+opacity:.5;
+
+}
+
+
+input::placeholder{
+
+opacity:.7;
+
+}
+
+
+form button{
+
+background-color:var(--color-primario);
+
+color:white;
+
+padding:14px 24px;
+
+border-radius:12px;
+
+}
+
+
+/* ==================================================
+TABLAS
+El carrito e información técnica.
+================================================== */
+
+/* =================================
+TABLAS
+Modo oscuro
+================================= */
+
+table{
+
+width:100%;
+
+margin-top:30px;
+
+border-collapse:collapse;
+
+background:#121212;
+
+color:white;
+
+overflow:hidden;
+
+border-radius:18px;
+
+box-shadow:
+0 0 25px
+rgba(220,38,38,.15);
+
+}
+
+
+caption{
+
+padding:20px;
+
+font-weight:bold;
+
+}
+
+
+/* =================================
+CELDAS TABLA
+================================= */
+
+th,
+td{
+
+padding:18px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+thead{
+
+background-color:var(--color-primario);
+
+color:white;
+
+}
+
+
+/* =================================
+FILAS PARES
+Modo oscuro
+================================= */
+
+tbody tr:nth-child(even){
+
+background-color:#181818;
+
+color:white;
+
+}
+
+
+tbody tr:hover{
+
+background-color:#2A0000;
+
+color:white;
+
+}
+
+
+/* ==================================================
+PROGRESS Y METER
+================================================== */
+
+progress,
+meter{
+
+width:180px;
+
+height:25px;
+
+}
+
+
+/* ==================================================
+Zona final del sitio.
+================================================== */
+
+footer{
+
+margin-top:80px;
+
+background-color:var(--color-primario);
+
+color:white;
+
+padding:40px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+
+footer address{
+
+font-style:normal;
+
+line-height:2;
+
+}
+
+
+footer small{
+
+display:block;
+
+margin-top:15px;
+
+}
+
+
+footer a:hover{
+
+color:var(--color-acento);
+
+}
+
+/* VIDEO */
+
+video{
+
+display:block;
+
+width:500px;
+
+max-width:100%;
+
+height:auto;
+
+margin:25px auto;
+
+border-radius:15px;
+
+box-shadow:0 0 15px rgba(255,0,0,.25);
+
+}
+
+
+/* AUDIO */
+
+audio{
+
+display:block;
+
+width:350px;
+
+max-width:100%;
+
+margin:20px auto;
+
+}
+
+
+/* PRODUCTOS GENERADOS CON JS */
+
+
+#contenedor-productos{
+
+display:grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+260px
+);
+
+justify-content:center;
+
+gap:35px;
+
+width:100%;
+
+margin:30px auto;
+
+}
+
+
+#contenedor-productos article{
+
+background:black;
+
+color:white;
+
+padding:20px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:
+0 0 18px
+rgba(255,0,0,.18);
+
+}
+
+
+#contenedor-productos img{
+
+width:220px;
+
+height:220px;
+
+margin:auto;
+
+object-fit:contain;
+
+}
+
+
+
+#contenedor-productos article:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+#contenedor-productos h3{
+
+margin-bottom:12px;
+
+font-size:1.2rem;
+
+}
+
+
+#contenedor-productos p{
+
+margin-bottom:18px;
+
+font-size:1rem;
+
+}
+
+
+#contenedor-productos button{
+
+background:#c40000;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:12px;
+
+}
+
+
+#contenedor-productos button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+.btn-rojo {
+  background-color: rgba(255, 17, 0, 0.597);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.btn-rojo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 18px rgba(0,0,0,.15);
+}
+
+.btn-rojo:active {
+  transform: scale(.96);
+}
+
+
+
+/* Tabla de especificaciones */
+#detalles-producto table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1c1c1c;
+  color: #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#detalles-producto th,
+#detalles-producto td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+#detalles-producto thead {
+  background-color: #ff0000aa; /* rojo */
+  color: black; /* letras negras */
+}
+
+#detalles-producto tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+#detalles-producto tbody tr:hover {
+  background-color: #333333;
+  transition: background-color 0.3s ease;
+}
+
+#detalles-producto tfoot {
+  background-color: #222;
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* Imágenes de productos y detalles
+   Ajustadas para no ser excesivamente grandes */
+#detalles-producto img,
+#contenedor-productos img,
+picture img {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;   /* tamaño máximo fijo */
+  width: 25%;        /* ocupa el ancho disponible hasta el máximo */
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#detalles-producto img:hover,
+#contenedor-productos img:hover,
+picture img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+
+
+#form-busqueda {
+  position: relative;
+  margin-top: 10px;
+}
+
+#input-busqueda {
+  padding: 8px 12px;
+  border: 2px solid #ff0000;
+  border-radius: 6px;
+  width: 250px;
+}
+
+#sugerencias {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1c1c1c;
+  border: 1px solid #ff0000;
+  border-radius: 6px;
+  margin-top: 5px;
+  width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sugerencia-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #eaeaea;
+}
+
+.sugerencia-item:hover {
+  background: #ff0000;
+  color: black;
+}
+
+/* Centrar buscador */
+#form-busqueda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+  position: relative;
+}
+
+#input-busqueda {
+  padding: 8px 12px;
+  border: 2px solid #ff0000;
+  border-radius: 6px;
+  width: 300px;
+  text-align: center; /* texto centrado dentro del input */
+}
+
+/* Centrar sugerencias debajo del input */
+#sugerencias {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* centra horizontalmente */
+  background: #1c1c1c;
+  border: 1px solid #ff0000;
+  border-radius: 6px;
+  margin-top: 5px;
+  width: 300px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sugerencia-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #eaeaea;
+}
+
+.sugerencia-item:hover {
+  background: #ff0000;
+  color: black;
+}
+
+
+/* Centrar imágenes */
+#detalles-producto img, #contenedor-productos img,
+picture img {
+  display: block;
+  margin: 0 auto; /* centra horizontalmente */
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#detalles-producto img:hover, #contenedor-productos img:hover,
+picture img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+/* Centrar artículos de productos */
+main section article {
+  text-align: center;
+}
+
+
+
+/* Grid de productos destacados */
+#productos-destacados {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-productos article {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.grid-productos article:hover {
+  transform: translateY(-5px);
+}
+
+.grid-productos img {
+  display: block;
+  margin: 0 auto 15px auto;
+  max-width: 80%;
+  border-radius: 8px;
+  border: 2px solid #ff0000;
+}
+
+
+#mensajes {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.mensaje {
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+  animation: aparecer 0.3s ease;
+}
+
+.mensaje.success { background: #28a745; } /* verde */
+.mensaje.warning { background: #ffc107; color: black; } /* amarillo */
+.mensaje.info    { background: #17a2b8; } /* azul */
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Botones extra del catálogo */
+#ordenar-precio,
+#invertir-orden,
+#mostrar-nombres {
+  background-color: #1c1c1c;   /* fondo oscuro */
+  color: #ff0000;              /* texto rojo */
+  font-weight: bold;
+  border: 2px solid #ff0000;   /* borde rojo */
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 8px;
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s;
+}
+
+#ordenar-precio:hover,
+#invertir-orden:hover,
+#mostrar-nombres:hover {
+  background-color: #ff0000;   /* rojo al pasar el cursor */
+  color: black;                /* texto negro para contraste */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+#ordenar-precio:active,
+#invertir-orden:active,
+#mostrar-nombres:active {
+  transform: scale(0.96);
+}
+
+
+
+/* Contenedor de botones extra */
+#contenedor-botones {
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  gap: 15px;                 /* espacio entre botones */
+  margin: 20px 0;
+}
+
+/* Botones extra */
+#btn-externos,
+#btn-locales {
+  background-color: #1c1c1c;
+  color: #00ffcc;
+  font-weight: bold;
+  border: 2px solid #00ffcc;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s;
+}
+
+#btn-externos:hover,
+#btn-locales:hover {
+  background-color: #00ffcc;
+  color: black;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+#btn-externos:active,
+#btn-locales:active {
+  transform: scale(0.96);
+}
+
+
+
+
+/* Barra de descuento centrada */
+#barra-descuento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centra horizontalmente */
+  margin: 20px auto;
+  width: 80%;            /* ancho controlado */
+}
+
+#barra-descuento meter {
+  width: 100%;
+  height: 20px;
+  border-radius: 8px;
+}
+
+#barra-descuento span {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #00ffcc;
+}

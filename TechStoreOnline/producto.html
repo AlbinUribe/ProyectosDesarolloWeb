@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Producto | La Pulga Digital</title>
+
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="stylesheet" href="css/animaciones.css">
+
+</head>
+<body>
+
+<header>
+
+
+  <h1>La Pulga Digital</h1>
+
+  <nav>
+
+
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+
+      <li><a href="productos.html">Productos</a></li>
+
+      <li><a href="carrito.html">Carrito</a></li>
+
+      <li><a href="contacto.html">Contacto</a></li>
+
+      <li><a href="acerca.html">Acerca de</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<main>
+
+  <section>
+    <div id="detalles-producto"></div>
+    <button id="btn-agregar-carrito" class="btn-rojo">Agregar al carrito</button>
+  </section>
+
+  
+
+
+
+
+
+
+  <section>
+
+    <h2>Audio promocional</h2>
+
+    <audio controls>
+
+      <source src="audio/producto-audio.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+
+  </section>
+
+</main>
+
+
+
+
+<footer>
+  <address>
+    La Pulga Digital <br>
+    contacto@lapulgadigital.com
+  </address>
+  <p><small>© 2026 La Pulga Digital</small></p>
+</footer>
+
+
+
+<script type="module">
+  import { mostrarDetallesProducto } from "./js/producto.js";
+  import { agregarAlCarrito } from "./js/carrito.js";
+
+  mostrarDetallesProducto();
+
+  // Botón para agregar al carrito desde la página de detalles
+  const btnCarrito = document.getElementById("btn-agregar-carrito");
+  btnCarrito.addEventListener("click", () => {
+    const productoGuardado = localStorage.getItem("productoDetalle");
+    if (productoGuardado) {
+      const producto = JSON.parse(productoGuardado);
+      agregarAlCarrito(producto);
+      alert("Producto agregado al carrito desde detalles");
+    }
+  });
+</script>
+
+</body>
+
+</html>

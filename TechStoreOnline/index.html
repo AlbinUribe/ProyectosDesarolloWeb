@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Pulga Digital</title>
+
+    <link
+rel="stylesheet"
+href="css/estilos.css">
+
+<link
+rel="stylesheet"
+href="css/responsive.css">
+
+<link
+rel="stylesheet"
+href="css/animaciones.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>La Pulga Digital</h1>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="productos.html">Productos</a>
+            </li>
+
+            <li>
+                <a href="carrito.html">Carrito</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+
+            <li>
+                <a href="acerca.html">Acerca de</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+<form id="form-busqueda">
+
+  <input type="text" id="input-busqueda" placeholder="Buscar productos...">
+  <div id="sugerencias"></div>
+  
+</form>
+
+
+</header>
+
+
+<section>
+
+    <h2>
+        Tecnología para todos
+    </h2>
+
+    <p>
+        Descubre ofertas, equipos y accesorios en La Pulga Digital.
+    </p>
+
+    <figure>
+
+        <img
+            src="img/banner-principal.jpg"
+            alt="Banner promocional de La Pulga Digital mostrando productos tecnológicos">
+
+        <figcaption>
+            Promociones destacadas de la semana
+        </figcaption>
+
+    </figure>
+
+    <button type="button">
+        Comprar ahora
+    </button>
+
+</section>
+
+
+<section>
+
+    <h2>
+        Explora nuestras categorías
+    </h2>
+
+    <article>
+
+        <h2>Laptops</h2>
+
+        <p>
+            Equipos para estudio, trabajo y alto rendimiento.
+        </p>
+
+    </article>
+
+    <article>
+
+        <h2>Smartphones</h2>
+
+        <p>
+            Dispositivos móviles para mantenerte conectado.
+        </p>
+
+    </article>
+
+    <article>
+
+        <h2>Accesorios</h2>
+
+        <p>
+            Audífonos, teclados, cargadores y más.
+        </p>
+
+    </article>
+
+    <article>
+
+        <h2>Gaming</h2>
+
+        <p>
+            Productos pensados para juego y entretenimiento.
+        </p>
+
+    </article>
+
+</section>
+
+
+<main>
+
+<section id="productos-destacados">
+  <h2>Productos Destacados</h2>
+  <div class="grid-productos">
+    <article>
+      <header><h3>Laptop Titan X15</h3></header>
+      <img src="img/laptop1.jpg" alt="Laptop Titan X15">
+      <p>Laptop para productividad y alto rendimiento.</p>
+      <p>Precio: <strong>$999</strong></p>
+      <footer>
+        <p>Disponible</p>
+        <button class="btn-rojo btn-comprar">Comprar</button>
+        <button class="btn-detalle">Ver detalles</button>
+      </footer>
+    </article>
+
+    <article>
+      <header><h3>Smartphone Nova</h3></header>
+      <img src="img/telefono1.jpg" alt="Smartphone Nova">
+      <p>Smartphone con cámara avanzada.</p>
+      <p>Precio: <strong>$699</strong></p>
+      <footer>
+        <p>Disponible</p>
+        <button class="btn-rojo btn-comprar">Comprar</button>
+        <button class="btn-detalle">Ver detalles</button>
+      </footer>
+    </article>
+
+    <article>
+      <header><h3>Teclado Mecánico Pulse</h3></header>
+      <img src="img/teclado.jpg" alt="Teclado Mecánico Pulse">
+      <p>Teclado mecánico para escritura y juego.</p>
+      <p>Precio: <strong>$120</strong></p>
+      <footer>
+        <p>Disponible</p>
+        <button class="btn-rojo btn-comprar">Comprar</button>
+        <button class="btn-detalle">Ver detalles</button>
+      </footer>
+    </article>
+
+    <article>
+      <header><h3>Monitor Horizon 27</h3></header>
+      <img src="img/monitor.jpg" alt="Monitor Horizon 27">
+      <p>Monitor diseñado para productividad.</p>
+      <p>Precio: <strong>$340</strong></p>
+      <footer>
+        <p>Disponible</p>
+        <button class="btn-rojo btn-comprar">Comprar</button>
+        <button class="btn-detalle">Ver detalles</button>
+      </footer>
+    </article>
+  </div>
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <address>
+
+        La Pulga Digital
+        <br>
+
+        MiCasa, República Dominicana
+        <br>
+
+        Correo:
+        contacto@lapulgadigital.com
+
+    </address>
+
+    <p>
+
+        <small>
+
+            © 2026 La Pulga Digital.
+            Todos los derechos reservados.
+
+        </small>
+
+    </p>
+
+</footer>
+
+<script type="module">
+  import { inicializarBuscador } from "./js/buscador.js";
+  inicializarBuscador();
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoritos | La Pulga Digital</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>La Pulga Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Mis Favoritos</h2>
+      <div id="contenedor-favoritos"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>© 2026 La Pulga Digital</small></p>
+  </footer>
+
+  <script type="module">
+    import { mostrarFavoritos } from "./js/utilidades.js";
+    document.addEventListener("DOMContentLoaded", mostrarFavoritos);
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | La Pulga Digital</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+</head>
+<body>
+  <header>
+    <h1>La Pulga Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="producto.html">Detalle</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section>
+      <h2>Carrito de Compras</h2>
+      <!-- Contenedor dinámico: aquí se insertará la tabla generada por carrito.js -->
+      <div id="contenedor-carrito"></div>
+
+      <br>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+    </section>
+
+    <section>
+  <h2>Opciones del Carrito</h2>
+  <button id="ordenar-precio">Ordenar por precio</button>
+  <button id="invertir-orden">Invertir orden</button>
+  <button id="mostrar-nombres">Mostrar nombres</button>
+</section>
+
+
+
+<section>
+  <h2>Descuento aplicado</h2>
+  <meter value="0" min="0" max="100">0%</meter>
+  <p>Has ahorrado $0 (0%)</p>
+</section>
+
+
+<section>
+  <h2>Realizar Pago</h2>
+  <label for="metodo-pago">Selecciona método de pago:</label>
+  <select id="metodo-pago">
+    <option value="paypal">PayPal</option>
+    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+  </select>
+  <br><br>
+  <button id="realizar-pago" class="btn-rojo">Realizar Pago</button>
+  <p id="mensaje-pago"></p>
+</section>
+
+  </main>
+
+  <footer>
+    <address>
+      La Pulga Digital<br>
+      contacto@lapulgadigital.com
+    </address>
+    <p><small>© 2026 La Pulga Digital</small></p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+

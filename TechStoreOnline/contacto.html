@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | La Pulga Digital</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+</head>
+<body>
+  <header>
+    <h1>La Pulga Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="producto.html">Detalle</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <form id="form-contacto" autocomplete="on">
+        <input type="hidden" value="cliente">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required placeholder="Mínimo 6 caracteres">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8,}" placeholder="8091234567">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required placeholder="Escribe aquí"></textarea>
+
+        <button type="submit" class="btn-rojo">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+
+      <!-- Contenedor de mensajes dinámicos -->
+      <div id="mensajes"></div>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      La Pulga Digital<br>
+      contacto@lapulgadigital.com
+    </address>
+    <p><small>© 2026 La Pulga Digital</small></p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

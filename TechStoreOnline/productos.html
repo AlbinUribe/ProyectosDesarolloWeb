@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Productos | La Pulga Digital
+</title>
+
+<link
+rel="stylesheet"
+href="css/estilos.css">
+
+<link
+rel="stylesheet"
+href="css/responsive.css">
+
+<link
+rel="stylesheet"
+href="css/animaciones.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<h1>
+
+La Pulga Digital
+
+</h1>
+
+<nav>
+
+<ul>
+
+<li>
+<a href="index.html">
+Inicio
+</a>
+</li>
+
+<li>
+<a href="productos.html">
+Productos
+</a>
+</li>
+
+<li>
+<a href="producto.html">
+Detalle
+</a>
+</li>
+
+<li>
+<a href="carrito.html">
+Carrito
+</a>
+</li>
+
+<li>
+<a href="contacto.html">
+Contacto
+</a>
+</li>
+
+<li>
+<a href="acerca.html">
+Acerca
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+<h2>
+
+Catálogo de Productos
+
+</h2>
+
+
+
+<aside>
+  <h3>Filtros</h3>
+  <form id="form-filtros">
+    <fieldset>
+      <legend>Buscar Productos</legend>
+
+      <label for="precio">Precio máximo</label>
+      <input type="number" id="precio" placeholder="Precio máximo">
+
+      <br><br>
+
+      <label for="marca">Marca</label>
+      <select id="marca">
+        <option value="">Seleccione</option>
+        <option value="Nova">Nova</option>
+        <option value="Titan">Titan</option>
+        <option value="Pulse">Pulse</option>
+        <option value="Echo">Echo</option>
+        <option value="Horizon">Horizon</option>
+        <option value="PixelBox">PixelBox</option>
+      </select>
+
+      <br><br>
+
+      <label for="categoria">Categoría</label>
+      <input list="categorias" id="categoria">
+      <datalist id="categorias">
+        <option value="Laptops">
+        <option value="Smartphones">
+        <option value="Accesorios">
+        <option value="Gaming">
+        <option value="Audio">
+        <option value="Tablets">
+        <option value="Monitores">
+      </datalist>
+
+      <br><br>
+
+      <label for="descuento">Porcentaje de ahorro mínimo</label>
+      <input type="number" id="descuento" placeholder="Ej: 10">
+
+      <br><br>
+
+      <button type="submit" class="btn-rojo">Aplicar filtros</button>
+    </fieldset>
+  </form>
+</aside>
+
+<div id="contenedor-botones">
+  <button id="btn-externos">Cargar productos externos</button>
+  <button id="btn-locales">Volver a productos locales</button>
+</div>
+
+
+
+<section>
+
+<h2>
+
+Productos
+
+</h2>
+
+
+<div
+id="contenedor-productos">
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+<address>
+
+La Pulga Digital
+
+<br>
+
+contacto@lapulgadigital.com
+
+</address>
+
+
+<p>
+
+<small>
+
+© 2026 La Pulga Digital
+
+</small>
+
+</p>
+
+</footer>
+
+
+
+<script
+type="module"
+src="js/app.js">
+
+</script>
+
+</body>
+
+</html>
+

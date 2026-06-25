@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factura | La Pulga Digital</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>La Pulga Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="factura.html">Factura</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Factura de Compra</h2>
+      <div id="contenedor-factura"></div>
+      <button id="btn-generar-factura" class="btn-rojo">Generar Factura</button>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>© 2026 La Pulga Digital</small></p>
+  </footer>
+
+  <script type="module">
+    import { generarFactura } from "./js/utilidades.js";
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("btn-generar-factura");
+      btn.addEventListener("click", generarFactura);
+    });
+  </script>
+</body>
+</html>
